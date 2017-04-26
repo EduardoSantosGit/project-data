@@ -1,0 +1,6 @@
+br\com\data\conf\AppWebConfiguration.class
+br\com\data\repository\UsuarioRepository.class
+br\com\data\conf\JPAConfiguration.class
+br\com\data\conf\ServletSpringMVC.class
+br\com\data\controller\UsuarioController.class
+br\com\data\entity\Usuario.class

@@ -20,10 +20,13 @@ public class UsuarioController {
 	@RequestMapping
 	public ModelAndView index(){
 		
-		List<Usuario> usuarios = usuarioRepository.findBySobreNome("santos");
+		//List<Usuario> usuarios = usuarioRepository.findBySobreNome("santos");
+		
+		List<Usuario> usuarios = usuarioRepository.findAll();
 		
 		for(Usuario usu : usuarios){
-			System.out.print(usu.getNome());
+			System.out.println(usu.getNome());
+			System.out.println(usu.getPerfil().getNmePerfil());
 		}
 		
 	return new ModelAndView("Init.Inicio");	

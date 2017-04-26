@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Usuario {
@@ -14,6 +15,9 @@ public class Usuario {
 	
 	private String nome;
 	private String sobreNome;
+	
+	@OneToOne
+	private Perfil perfil;
 	
 	public Long getId() {
 		return id;
@@ -33,6 +37,13 @@ public class Usuario {
 	public void setSobreNome(String sobreNome) {
 		this.sobreNome = sobreNome;
 	}
+	public Perfil getPerfil() {
+		return perfil;
+	}
+	public void setPerfil(Perfil perfil) {
+		this.perfil = perfil;
+	}
+	
 	
 	
 

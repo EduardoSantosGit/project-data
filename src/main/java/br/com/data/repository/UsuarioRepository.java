@@ -10,5 +10,7 @@ import br.com.data.entity.Usuario;
 public interface UsuarioRepository extends Repository<Usuario, Long>{
 	
 	List<Usuario> findBySobreNome(String sobreNome);
+	
+	List<Usuario> findAll();
 
 }

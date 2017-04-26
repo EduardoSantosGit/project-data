@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="Init" template="/WEB-INF/base.jsp">
+	    <put-attribute name="controller" value="" />
+	    <put-attribute name="header" value="" />
+	</definition>
+	
+	<definition name="Init.Inicio" template="/WEB-INF/base.jsp" extends="Init">
+		<put-attribute name="controller" value="inicio" />
+		<put-attribute name="body" value="/WEB-INF/views/Inicio.jsp" />
+	</definition>	
+	
+</tiles-definitions>
